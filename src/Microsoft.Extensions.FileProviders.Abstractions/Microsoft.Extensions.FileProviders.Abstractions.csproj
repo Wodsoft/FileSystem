@@ -25,7 +25,7 @@ Microsoft.Extensions.FileProviders.IFileProvider</Description>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Wodsoft.Extensions.Primitives" Version="1.0.0"/>
+    <PackageReference Include="Wodsoft.Extensions.Primitives" Version="1.1.1"/>
     <PackageReference Include="Wodsoft.Extensions.FileProviders.Sources" Version="1.1.1" PrivateAssets="all"/>
   </ItemGroup>
 

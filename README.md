@@ -1,8 +1,14 @@
 FileProvider
 ==========
-AppVeyor: [![AppVeyor](https://ci.appveyor.com/api/projects/status/8pryt261xf7q0cb6/branch/dev?svg=true)](https://ci.appveyor.com/project/aspnetci/FileSystem/branch/dev)
+### Porting for .Net Framework 4.0 base on version 1.1.1.
 
-Travis:   [![Travis](https://travis-ci.org/aspnet/FileSystem.svg?branch=dev)](https://travis-ci.org/aspnet/FileSystem)
+## Install package with:
+* [Wodsoft.Extensions.FileProviders.Abstractions](https://www.nuget.org/packages/Wodsoft.Extensions.FileProviders.Abstractions)
+* [Wodsoft.Extensions.FileProviders.Composite](https://www.nuget.org/packages/Wodsoft.Extensions.FileProviders.Composite)
+* [Wodsoft.Extensions.FileProviders.Embedded](https://www.nuget.org/packages/Wodsoft.Extensions.FileProviders.Embedded)
+* [Wodsoft.Extensions.FileProviders.Physical](https://www.nuget.org/packages/Wodsoft.Extensions.FileProviders.Physical)
+* [Wodsoft.Extensions.FileSystemGlobbing](https://www.nuget.org/packages/Wodsoft.Extensions.FileSystemGlobbing)
+
 
 File Provider abstractions. Contains file system abstractions and file system globbing.
 
