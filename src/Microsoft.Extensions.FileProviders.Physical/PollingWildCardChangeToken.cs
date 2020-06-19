@@ -96,7 +96,7 @@ namespace Microsoft.Extensions.FileProviders.Physical
 #if NET451
             using (var sha256 = new IncrementalHash())
 #else
-            using (var sha256 = IncrementalHash.CreateHash(HashAlgorithmName.SHA256))
+            using (var sha256 = new IncrementalHash(SHA256.Create()))
 #endif
             {
                 foreach (var file in files)

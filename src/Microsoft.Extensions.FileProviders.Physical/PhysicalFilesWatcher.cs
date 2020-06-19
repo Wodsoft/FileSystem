@@ -308,7 +308,7 @@ namespace Microsoft.Extensions.FileProviders.Physical
                 return;
             }
 
-            Task.Run(() =>
+            TaskEx.Run(() =>
             {
                 try
                 {

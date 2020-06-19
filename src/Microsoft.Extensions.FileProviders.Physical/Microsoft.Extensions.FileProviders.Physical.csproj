@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>File provider for physical files for Microsoft.Extensions.FileProviders.</Description>
+    <VersionPrefix>1.1.1</VersionPrefix>
+    <TargetFramework>net40</TargetFramework>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <AssemblyName>Microsoft.Extensions.FileProviders.Physical</AssemblyName>
+    <AssemblyOriginatorKeyFile>../../tools/Key.snk</AssemblyOriginatorKeyFile>
+    <SignAssembly>true</SignAssembly>
+    <PublicSign Condition=" '$(OS)' != 'Windows_NT' ">true</PublicSign>
+    <PackageId>Wodsoft.Extensions.FileProviders.Physical</PackageId>
+    <PackageTags>files;filesystem</PackageTags>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/wodsoft/filesystem</RepositoryUrl>
+    <GenerateNeutralResourcesLanguageAttribute>false</GenerateNeutralResourcesLanguageAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyCopyrightAttribute>false</GenerateAssemblyCopyrightAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Microsoft.Extensions.FileProviders.Abstractions\Microsoft.Extensions.FileProviders.Abstractions.csproj" />
+    <ProjectReference Include="..\Microsoft.Extensions.FileSystemGlobbing\Microsoft.Extensions.FileSystemGlobbing.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Bcl.Async" Version="1.0.168" />
+    <PackageReference Include="Wodsoft.DotNet40.Runtime" Version="1.0.1" />
+    <PackageReference Include="Wodsoft.Extensions.FileProviders.Sources" Version="1.1.1" PrivateAssets="all" />
+  </ItemGroup>
+
+</Project>

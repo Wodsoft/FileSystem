@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Abstractions of files and directories.
+Commonly used types:
+Microsoft.Extensions.FileProviders.IDirectoryContents
+Microsoft.Extensions.FileProviders.IFileInfo
+Microsoft.Extensions.FileProviders.IFileProvider</Description>
+    <VersionPrefix>1.1.1</VersionPrefix>
+    <TargetFramework>net40</TargetFramework>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <AssemblyName>Microsoft.Extensions.FileProviders.Abstractions</AssemblyName>
+    <AssemblyOriginatorKeyFile>../../tools/Key.snk</AssemblyOriginatorKeyFile>
+    <SignAssembly>true</SignAssembly>
+    <PublicSign Condition=" '$(OS)' != 'Windows_NT' ">true</PublicSign>
+    <PackageId>Wodsoft.Extensions.FileProviders.Abstractions</PackageId>
+    <PackageTags>files;filesystem</PackageTags>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/wodsoft/filesystem</RepositoryUrl>
+    <GenerateNeutralResourcesLanguageAttribute>false</GenerateNeutralResourcesLanguageAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyCopyrightAttribute>false</GenerateAssemblyCopyrightAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Wodsoft.Extensions.Primitives" Version="1.0.0"/>
+    <PackageReference Include="Wodsoft.Extensions.FileProviders.Sources" Version="1.1.1" PrivateAssets="all"/>
+  </ItemGroup>
+
+</Project>

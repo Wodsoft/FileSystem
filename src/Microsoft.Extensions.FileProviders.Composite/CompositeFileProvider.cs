@@ -22,7 +22,7 @@ namespace Microsoft.Extensions.FileProviders
         /// <param name="fileProviders">The collection of <see cref="IFileProvider" /></param>
         public CompositeFileProvider(params IFileProvider[] fileProviders)
         {
-            _fileProviders = fileProviders ?? new IFileProvider[0];
+            _fileProviders = fileProviders ?? new IFileProvider[0]; 
         }
 
         /// <summary>
@@ -31,6 +31,7 @@ namespace Microsoft.Extensions.FileProviders
         /// <param name="fileProviders">The collection of <see cref="IFileProvider" /></param>
         public CompositeFileProvider(IEnumerable<IFileProvider> fileProviders)
         {
+            
             if (fileProviders == null)
             {
                 throw new ArgumentNullException(nameof(fileProviders));
