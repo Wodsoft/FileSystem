@@ -18,6 +18,8 @@ Microsoft.Extensions.FileProviders.IFileProvider</Description>
     <PackageTags>files;filesystem</PackageTags>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/wodsoft/filesystem</RepositoryUrl>
+    <IncludeSymbols>true</IncludeSymbols>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
     <GenerateNeutralResourcesLanguageAttribute>false</GenerateNeutralResourcesLanguageAttribute>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyCopyrightAttribute>false</GenerateAssemblyCopyrightAttribute>
@@ -27,6 +29,10 @@ Microsoft.Extensions.FileProviders.IFileProvider</Description>
   <ItemGroup>
     <PackageReference Include="Wodsoft.Extensions.Primitives" Version="1.1.1"/>
     <PackageReference Include="Wodsoft.Extensions.FileProviders.Sources" Version="1.1.1" PrivateAssets="all"/>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
   </ItemGroup>
 
 </Project>
